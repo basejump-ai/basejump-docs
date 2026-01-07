@@ -10,7 +10,7 @@ Click 'Add Collection' in the top-right to create a new collection. Then select 
 
 The context menu available in the data tile has most of the same options as data tiles on the Data page. See the Data page for more information regarding the context menu:
 
-[!ref](/sidebar-options/member-options/data.md)
+[!ref](/basejump_cloud/sidebar-options/member-options/data.md)
 
 ## Sharing your Collection
 

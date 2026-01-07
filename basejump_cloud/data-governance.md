@@ -39,7 +39,7 @@ The relationships you define will be shown as an ERD diagram in our 'Explore' pa
 
 For more information, please refer to the explore page:
 
-[!ref](/sidebar-options/member-options/explore.md)
+[!ref](/basejump-cloud/sidebar-options/member-options/explore.md)
 
 ## Verification
 
