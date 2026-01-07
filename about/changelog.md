@@ -3,7 +3,7 @@
 ## Basejump AI is Now Source Available
 _January 7, 2026_
 
-We’re excited to announce that Basejump AI is now source available! This has been a long time coming and we decided to start off 2026 by releasing Basejump under an open source license. You can check it out in our Github repo [here](https://github.com/basejump-ai/basejump).
+We’re excited to announce that Basejump AI is now source available! This has been a long time coming and we decided to start off 2026 by releasing Basejump under a source available license. You can check it out in our Github repo [here](https://github.com/basejump-ai/basejump).
 
 ## TLDR
 - ✅ Accuracy: Uses SQLglot to parse and validate queries, preventing hallucinated tables, columns, or filters
@@ -24,7 +24,7 @@ Going forward, the changelog will have 3 separate sections: one for source avail
 _January 7, 2026_
 
 ### Features
-- Refactoring of the code base to prepare for the open source launch
+- Refactoring of the code base to prepare for the source available launch
 - Upgrade to pydantic V2
 - Added support for Athena
 
@@ -46,7 +46,7 @@ _January 7, 2026_
 - The PUT `/connection/database/{db_uuid}/` has been updated so that the index is updated and new tables are scanned when this endpoint is used.
 - Added ability for end users to change the preferred LLM
 - Created and supported service members
-- Separated basejump into open source, internal, and API packages
+- Separated basejump into source available, internal, and API packages
 
 #### New Endpoints
 - PUT `/account/client/settings/`
