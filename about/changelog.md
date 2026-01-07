@@ -1,5 +1,72 @@
 # Changelog
 
+## Basejump AI is Now Source Available
+_January 7, 2026_
+
+We’re excited to announce that Basejump AI is now source available! This has been a long time coming and we decided to start off 2026 by releasing Basejump under an open source license. You can check it out in our Github repo [here](https://github.com/basejump-ai/basejump).
+
+## TLDR
+✅ Accuracy: Uses SQLglot to parse and validate queries, preventing hallucinated tables, columns, or filters
+🔒 Security: Role-based access control ensures users and AI agents only access provisioned data
+⚡ Fast Indexing: Redis vector database integration for rapid semantic search
+🗄️ Full Tracking: Pre-configured schema tracks chat history, clients, teams, users, and query results
+💾 Smart Caching: Support semantic caching for retrieval of datasets based on similar questions
+📦 Result Storage: Saves data results for later reference and auditing
+
+Basejump also now supports embeds!
+
+### Summary
+Going forward, the changelog will have 3 separate sections: one for source available releases, one for API releases, and one for the UI releases.
+
+==- Source available
+**Release v0.31.4**
+
+_January 7, 2026_
+
+### Features
+- Refactoring of the code base to prepare for the open source launch
+- Upgrade to pydantic V2
+- Added support for Athena
+
+### Bugs
+- Database column quoting is now working properly when there are mixed case names or other instances where columns need to be quoted
+- Fixing column verification bug
+
+### Breaking Changes
+- Many functions were put into classes, most notably: ResultStore, QueryRunner, and QueryRecorder. This was released in v0.31.0, but putting here to catch up on changelog entries.
+
+===
+
+==- API
+**Release v1.2.1**
+
+_January 7, 2026_
+
+### Features
+- The PUT `/connection/database/{db_uuid}/` has been updated so that the index is updated and new tables are scanned when this endpoint is used.
+- Added ability for end users to change the preferred LLM
+- Created and supported service members
+- Separated basejump into open source, internal, and API packages
+
+#### New Endpoints
+- PUT `/account/client/settings/`
+
+### Bugs
+- None
+
+### Breaking changes
+- None
+===
+
+==- UI
+
+_January 7, 2026_
+
+### Features
+- Basejump now supports embeds
+
+===
+
 ## Improved Accuracy, Feedback, and Private Storage
 _April 10, 2025_
 

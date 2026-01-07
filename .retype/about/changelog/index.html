@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.810463264901">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.821144576491">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Changelog</title>
     <meta name="title" content="Changelog">
-    <meta name="description" content="April 10, 2025">
+    <meta name="description" content="January 7, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://basejump.ai/about/changelog/">
@@ -20,24 +20,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://basejump.ai/about/changelog/">
     <meta property="og:title" content="Changelog">
-    <meta property="og:description" content="April 10, 2025">
+    <meta property="og:description" content="January 7, 2026">
     <meta property="og:image" content="https://basejump.ai/images/changelog/thumbs_up_2025_04_10.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://basejump.ai/about/changelog/">
     <meta property="twitter:title" content="Changelog">
-    <meta property="twitter:description" content="April 10, 2025">
+    <meta property="twitter:description" content="January 7, 2026">
     <meta property="twitter:image" content="https://basejump.ai/images/changelog/thumbs_up_2025_04_10.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../images/favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.810463264901" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.821144576491" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.810463264901" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.821144576491" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.810463264901" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.821144576491" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,6 +176,126 @@
         <span>Changelog</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="basejump-ai-is-now-source-available">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basejump-ai-is-now-source-available">#</doc-anchor-trigger>
+        <span>Basejump AI is Now Source Available</span>
+    </h2>
+</doc-anchor-target>
+<p><em>January 7, 2026</em></p>
+<p>We’re excited to announce that Basejump AI is now source available! This has been a long time coming and we decided to start off 2026 by releasing Basejump under an open source license. You can check it out in our Github repo <a href="https://github.com/basejump-ai/basejump">here</a>.</p>
+<doc-anchor-target id="tldr">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr">#</doc-anchor-trigger>
+        <span>TLDR</span>
+    </h2>
+</doc-anchor-target>
+<p><span class="docs-emoji">&#x2705;</span> Accuracy: Uses SQLglot to parse and validate queries, preventing hallucinated tables, columns, or filters
+<span class="docs-emoji">&#x1F512;</span> Security: Role-based access control ensures users and AI agents only access provisioned data
+<span class="docs-emoji">&#x26A1;</span> Fast Indexing: Redis vector database integration for rapid semantic search
+<span class="docs-emoji">&#x1F5C4;&#xFE0F;</span> Full Tracking: Pre-configured schema tracks chat history, clients, teams, users, and query results
+<span class="docs-emoji">&#x1F4BE;</span> Smart Caching: Support semantic caching for retrieval of datasets based on similar questions
+<span class="docs-emoji">&#x1F4E6;</span> Result Storage: Saves data results for later reference and auditing</p>
+<p>Basejump also now supports embeds!</p>
+<doc-anchor-target id="summary">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <span>Summary</span>
+    </h3>
+</doc-anchor-target>
+<p>Going forward, the changelog will have 3 separate sections: one for source available releases, one for API releases, and one for the UI releases.</p>
+<doc-panel id="source-available" collapsed>
+    <template #title>Source available</template>
+<p><strong>Release v0.31.4</strong></p>
+<p><em>January 7, 2026</em></p>
+<doc-anchor-target id="features">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
+        <span>Features</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Refactoring of the code base to prepare for the open source launch</li>
+<li>Upgrade to pydantic V2</li>
+<li>Added support for Athena</li>
+</ul>
+<doc-anchor-target id="bugs">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs">#</doc-anchor-trigger>
+        <span>Bugs</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Database column quoting is now working properly when there are mixed case names or other instances where columns need to be quoted</li>
+<li>Fixing column verification bug</li>
+</ul>
+<doc-anchor-target id="breaking-changes">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes">#</doc-anchor-trigger>
+        <span>Breaking Changes</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Many functions were put into classes, most notably: ResultStore, QueryRunner, and QueryRecorder. This was released in v0.31.0, but putting here to catch up on changelog entries.</li>
+</ul>
+</doc-panel>
+<doc-panel id="api" collapsed>
+    <template #title>API</template>
+<p><strong>Release v1.2.1</strong></p>
+<p><em>January 7, 2026</em></p>
+<doc-anchor-target id="features-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-1">#</doc-anchor-trigger>
+        <span>Features</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>The PUT <code v-pre>/connection/database/{db_uuid}/</code> has been updated so that the index is updated and new tables are scanned when this endpoint is used.</li>
+<li>Added ability for end users to change the preferred LLM</li>
+<li>Created and supported service members</li>
+<li>Separated basejump into open source, internal, and API packages</li>
+</ul>
+<doc-anchor-target id="new-endpoints">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints">#</doc-anchor-trigger>
+        <span>New Endpoints</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>PUT <code v-pre>/account/client/settings/</code></li>
+</ul>
+<doc-anchor-target id="bugs-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-1">#</doc-anchor-trigger>
+        <span>Bugs</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>None</li>
+</ul>
+<doc-anchor-target id="breaking-changes-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-1">#</doc-anchor-trigger>
+        <span>Breaking changes</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>None</li>
+</ul>
+</doc-panel>
+<doc-panel id="ui" collapsed>
+    <template #title>UI</template>
+<p><em>January 7, 2026</em></p>
+<doc-anchor-target id="features-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-2">#</doc-anchor-trigger>
+        <span>Features</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Basejump now supports embeds</li>
+</ul>
+</doc-panel>
 <doc-anchor-target id="improved-accuracy-feedback-and-private-storage">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#improved-accuracy-feedback-and-private-storage">#</doc-anchor-trigger>
@@ -184,9 +304,9 @@
 </doc-anchor-target>
 <p><em>April 10, 2025</em></p>
 <p>This release we improved AI accuracy, added thumbs up/down on user messages, and added private storage options for data retrieved from the database.</p>
-<doc-anchor-target id="tldr">
+<doc-anchor-target id="tldr-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-1">#</doc-anchor-trigger>
         <span>TLDR</span>
     </h2>
 </doc-anchor-target>
@@ -195,9 +315,9 @@
 <li><span class="docs-emoji">&#x1F44D;</span> Users can now provide feedback to the AI using thumbs up/down on a message</li>
 <li><span class="docs-emoji">&#x1F5C4;&#xFE0F;</span> Users can store saved data results in their own private storage</li>
 </ul>
-<doc-anchor-target id="summary">
+<doc-anchor-target id="summary-1">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-1">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -217,9 +337,9 @@
         <span class="inline-block font-medium ml-2">Chat</span>
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>../../sidebar-options/member-options/chat/</span>
+        <span>../../basejump_cloud/sidebar-options/member-options/chat/</span>
     </div>
-    <a href="../../sidebar-options/member-options/chat/" class="absolute block inset-0"></a>
+    <a href="../../basejump_cloud/sidebar-options/member-options/chat/" class="absolute block inset-0"></a>
 </div>
 </p>
 <p>Finally, for users that want improved security, they can store the AI result responses in their own private AWS object storage via S3. This security enhancement will ensure no spreadsheets from the user database is ever stored within Basejump. In order to add private storage, go to the Company -&gt; Advanced section.</p>
@@ -237,9 +357,9 @@
         <span class="inline-block font-medium ml-2">Company</span>
     </div>
     <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>../../sidebar-options/owner-options/company/</span>
+        <span>../../basejump_cloud/sidebar-options/owner-options/company/</span>
     </div>
-    <a href="../../sidebar-options/owner-options/company/" class="absolute block inset-0"></a>
+    <a href="../../basejump_cloud/sidebar-options/owner-options/company/" class="absolute block inset-0"></a>
 </div>
 </p>
 <doc-anchor-target id="api-release">
@@ -252,9 +372,9 @@
     <template #title>API</template>
 <p><strong>Release v1.2.0</strong></p>
 <p><em>April 10, 2025</em></p>
-<doc-anchor-target id="features">
+<doc-anchor-target id="features-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-3">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -267,9 +387,9 @@
 <li>Enforcement of columns was added so the AI is never able to use an invalid column name or one that has been ignored</li>
 <li>Changed the message dropdown from &#x27;SQL&#x27; to &#x27;Audit&#x27;</li>
 </ul>
-<doc-anchor-target id="new-endpoints">
+<doc-anchor-target id="new-endpoints-1">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints-1">#</doc-anchor-trigger>
         <span>New Endpoints</span>
     </h4>
 </doc-anchor-target>
@@ -284,18 +404,18 @@
 <li storage_uuid="">PUT /connection/storage//</li>
 <li storage_uuid="">DELETE /connection/storage//</li>
 </ul>
-<doc-anchor-target id="bugs">
+<doc-anchor-target id="bugs-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-2">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>Fixed issue while chatting where if two prompts were submitted simultaneously, then the prompt that completes first would cancel the other from completing</li>
 </ul>
-<doc-anchor-target id="breaking-changes">
+<doc-anchor-target id="breaking-changes-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-2">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -330,9 +450,9 @@
     <template #title>API</template>
 <p><strong>Release v1.1.0</strong></p>
 <p><em>March 11, 2025</em></p>
-<doc-anchor-target id="features-1">
+<doc-anchor-target id="features-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-4">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -340,9 +460,9 @@
 <li>Added the SQL Server and Snowflake database integrations!</li>
 <li>Made the port field optional when connecting your database (providers like Snowflake don&#x27;t require it)</li>
 </ul>
-<doc-anchor-target id="bugs-1">
+<doc-anchor-target id="bugs-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-3">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -352,9 +472,9 @@
 <li>If foreign schemas for a given table weren&#x27;t included in the accepted list of schemas, it would previously throw an error. Now that relationship is ignored and fills in None values if that foreign schema is not available as part of the database connection setup.</li>
 <li>Child partitions are excluded from indexing for redshift and postgres</li>
 </ul>
-<doc-anchor-target id="breaking-changes-1">
+<doc-anchor-target id="breaking-changes-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-3">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -370,18 +490,18 @@
 </doc-anchor-target>
 <p><em>March 6, 2025</em></p>
 <p>This launch is all about improving the trust that users have in the results that they are getting from the Basejump AI application.</p>
-<doc-anchor-target id="tldr-1">
+<doc-anchor-target id="tldr-2">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-2">#</doc-anchor-trigger>
         <span>TLDR</span>
     </h2>
 </doc-anchor-target>
 <ul>
 <li><span class="docs-emoji">&#x2705;</span> Users can mark results as verified, which will then be returned to other users for semantically similar queries.</li>
 </ul>
-<doc-anchor-target id="summary-1">
+<doc-anchor-target id="summary-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-2">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -428,9 +548,9 @@
     <template #title>API</template>
 <p><strong>Release v1.0.0</strong></p>
 <p><em>March 6, 2025</em></p>
-<doc-anchor-target id="features-2">
+<doc-anchor-target id="features-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-5">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -438,9 +558,9 @@
 <li>Added verification feature and semantic caching</li>
 <li>Added changing storage location via API</li>
 </ul>
-<doc-anchor-target id="new-endpoints-1">
+<doc-anchor-target id="new-endpoints-2">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints-2">#</doc-anchor-trigger>
         <span>New Endpoints</span>
     </h4>
 </doc-anchor-target>
@@ -479,9 +599,9 @@ More parameters to update will likely be added in the future.</li>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="bugs-2">
+<doc-anchor-target id="bugs-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-4">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -490,9 +610,9 @@ More parameters to update will likely be added in the future.</li>
 <li>Fixed only top 10 tables being used for ERD diagram</li>
 <li>Fixed queries for other connections with jinja values not executing due to unresolved jinja</li>
 </ul>
-<doc-anchor-target id="breaking-changes-2">
+<doc-anchor-target id="breaking-changes-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-4">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -521,9 +641,9 @@ More parameters to update will likely be added in the future.</li>
 </doc-anchor-target>
 <p><em>February 4, 2025</em></p>
 <p>We are proud to be launching on Product Hunt again for this release! The last time we launched on Product Hunt was Sept. 2024 and so much has changed since then.</p>
-<doc-anchor-target id="tldr-2">
+<doc-anchor-target id="tldr-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-3">#</doc-anchor-trigger>
         <span>TLDR</span>
     </h3>
 </doc-anchor-target>
@@ -533,9 +653,9 @@ More parameters to update will likely be added in the future.</li>
 <li><span class="docs-emoji">&#x1F527;</span> We gave our AI Data Assistant access to our docs. Users can now ask the AI any questions about how to use the Basejump AI app.</li>
 <li><span class="docs-emoji">&#x1F5FA;&#xFE0F;</span> We&#x27;re introducing guided tutorials which will help new users understand how to use our app.</li>
 </ul>
-<doc-anchor-target id="summary-2">
+<doc-anchor-target id="summary-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-3">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -565,9 +685,9 @@ More parameters to update will likely be added in the future.</li>
     <template #title>API</template>
 <p><strong>Release v0.29.0</strong></p>
 <p><em>February 4, 2025</em></p>
-<doc-anchor-target id="features-3">
+<doc-anchor-target id="features-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-6">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -578,9 +698,9 @@ More parameters to update will likely be added in the future.</li>
 <li>Added visualization support! <span class="docs-emoji">&#x1F4CA;</span></li>
 <li>Enforcing SSL required to enforce encrypted connections for improved security + HIPAA compliance</li>
 </ul>
-<doc-anchor-target id="new-endpoints-2">
+<doc-anchor-target id="new-endpoints-3">
     <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#new-endpoints-3">#</doc-anchor-trigger>
         <span>New Endpoints</span>
     </h4>
 </doc-anchor-target>
@@ -593,9 +713,9 @@ More parameters to update will likely be added in the future.</li>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="bugs-3">
+<doc-anchor-target id="bugs-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-5">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -603,9 +723,9 @@ More parameters to update will likely be added in the future.</li>
 <li>Updated the create_chat endpoint to not allow chats created by those who don&#x27;t belong to the team being passed in</li>
 <li>Updated code to throw error if there is a DB alias conflict</li>
 </ul>
-<doc-anchor-target id="breaking-changes-3">
+<doc-anchor-target id="breaking-changes-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-5">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -668,9 +788,9 @@ POST /result/visual/search/ -&gt; DELETED</p>
 </doc-anchor-target>
 <p><em>January 14, 2025</em></p>
 <p>There were so many changes this release! We&#x27;re proud of all the changes that we managed to accomplish and share with all of you.</p>
-<doc-anchor-target id="tldr-3">
+<doc-anchor-target id="tldr-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tldr-4">#</doc-anchor-trigger>
         <span>TLDR</span>
     </h3>
 </doc-anchor-target>
@@ -754,9 +874,9 @@ POST /result/visual/search/ -&gt; DELETED</p>
     <template #title>API</template>
 <p><strong>Release v0.28.0</strong></p>
 <p><em>January 14, 2025</em></p>
-<doc-anchor-target id="summary-3">
+<doc-anchor-target id="summary-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-4">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -778,9 +898,9 @@ POST /result/visual/search/ -&gt; DELETED</p>
 <li>Improved security and updated the documentation</li>
 <li>Improved RBAC controls for the API, added feature to stop AI thoughts, and updated the API docs</li>
 </ul>
-<doc-anchor-target id="breaking-changes-4">
+<doc-anchor-target id="breaking-changes-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-6">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -873,7 +993,7 @@ POST /result/visual/search/ -&gt; DELETED</p>
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 Basejump AI Inc. All rights reserved.</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2026 Basejump AI Inc. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
