@@ -6,12 +6,12 @@ _January 7, 2026_
 We’re excited to announce that Basejump AI is now source available! This has been a long time coming and we decided to start off 2026 by releasing Basejump under an open source license. You can check it out in our Github repo [here](https://github.com/basejump-ai/basejump).
 
 ## TLDR
-✅ Accuracy: Uses SQLglot to parse and validate queries, preventing hallucinated tables, columns, or filters
-🔒 Security: Role-based access control ensures users and AI agents only access provisioned data
-⚡ Fast Indexing: Redis vector database integration for rapid semantic search
-🗄️ Full Tracking: Pre-configured schema tracks chat history, clients, teams, users, and query results
-💾 Smart Caching: Support semantic caching for retrieval of datasets based on similar questions
-📦 Result Storage: Saves data results for later reference and auditing
+- ✅ Accuracy: Uses SQLglot to parse and validate queries, preventing hallucinated tables, columns, or filters
+- 🔒 Security: Role-based access control ensures users and AI agents only access provisioned data
+- ⚡ Fast Indexing: Redis vector database integration for rapid semantic search
+- 🗄️ Full Tracking: Pre-configured schema tracks chat history, clients, teams, users, and query results
+- 💾 Smart Caching: Support semantic caching for retrieval of datasets based on similar questions
+- 📦 Result Storage: Saves data results for later reference and auditing
 
 Basejump also now supports embeds!
 
