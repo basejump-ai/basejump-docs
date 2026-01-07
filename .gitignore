@@ -1,2 +1,5 @@
 _myenv/
 *.sql
+blog/
+.DS_Store
+*.csv
