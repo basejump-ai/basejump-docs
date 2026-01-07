@@ -1,6 +1,7 @@
 # Table of contents
 
 * [What is Basejump?](README.md)
+* [Getting Started](getting_started.md)
 * [Quickstart](quickstart.md)
 * [Integrations](integrations/README.md)
     * [Database]
@@ -20,6 +21,13 @@
     * [Billing](basejump_cloud/account/billing.md)
   * [API](basejump_cloud/api.md)
   * [Data Governance](basejump_cloud/data-governance.md)
+  * [Embedding](embed/README.md)
+    * [Introduction](embed/introduction.md)
+    * [Embed Code](embed/embed-code.md)
+    * [Cross-Origin Communication](embed/cross-origin-communication.md)
+    * [Client Token Endpoint](embed/client-token-endpoint.md)
+    * [Service Members](embed/service-members.md)
+    * [Client Token Endpoint Example](embed/client-token-endpoint-example.md)    
   * [Integrations](basejump_cloud/integrations.md)
   * [Security](basejump_cloud/security.md)
   * [Sidebar Options](basejump_cloud/sidebar-options/README.md)
@@ -35,6 +43,7 @@
     * [Owner Options](basejump_cloud/sidebar-options/owner-options/README.md)
       * [API Keys](basejump_cloud/sidebar-options/owner-options/api-keys.md)
       * [Company](basejump_cloud/sidebar-options/owner-options/company.md)
+      * [Embedding](embed/README.md)      
       * [Subscription](basejump_cloud/sidebar-options/owner-options/subscription.md)
   * [About](basejump_cloud/about/README.md)
     * [Changelog](basejump_cloud/about/changelog.md)
