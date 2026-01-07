@@ -1,6 +1,6 @@
 {
-  "version": "3.6.0",
-  "created": "2025-04-10T15:49:09Z",
+  "version": "3.11.0",
+  "created": "2025-09-06T08:41:08Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -45,6 +45,27 @@
     },
     {
       "path": "data-governance/index.html"
+    },
+    {
+      "path": "embed/client-token-endpoint-example/index.html"
+    },
+    {
+      "path": "embed/client-token-endpoint/index.html"
+    },
+    {
+      "path": "embed/cross-origin-communication/index.html"
+    },
+    {
+      "path": "embed/embed-code/index.html"
+    },
+    {
+      "path": "embed/index.html"
+    },
+    {
+      "path": "embed/introduction/index.html"
+    },
+    {
+      "path": "embed/service-members/index.html"
     },
     {
       "path": "getting-started/concepts/index.html"
