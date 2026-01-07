@@ -2,7 +2,7 @@
 
 On the subscription page, the Owner can see the current remaining credit balance. For more information on Basejump credits, please refer to the concepts page:
 
-[!ref](/getting-started/concepts.md)
+[!ref](/basejump_cloud/getting-started/concepts.md)
 
 ## Managing Your Subscription
 

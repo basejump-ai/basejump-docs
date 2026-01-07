@@ -20,7 +20,7 @@ Click the pencil icon in order to edit a team. While editing a team you are able
 
 The User roles are listed to the right of each name. For a list of available roles, see the 'User Definitions' section on the concepts page:
 
-[!ref](/getting-started/concepts.md)
+[!ref](/basejump_cloud/getting-started/concepts.md)
 
 ## Deleting a Team
 

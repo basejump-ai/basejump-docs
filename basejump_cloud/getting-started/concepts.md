@@ -20,7 +20,7 @@ An administrator can create Members, but can't create other Administrators. Admi
 
 Refer to the 'Sidebar Options' section for more information regarding each option:
 
-[!ref](/sidebar-options/)
+[!ref](/basejump_cloud/sidebar-options/)
 
 ### Member
 
@@ -40,7 +40,7 @@ A team is a group of users who have been provisioned a certain level of access t
 
 Datasources are assigned at the Team level and not the individual User level. Results generated from datasources can be shared within Teams. See the teams page for more information on Team management:
 
-[!ref](/sidebar-options/administrator-options/teams.md)
+[!ref](/basejump_cloud/sidebar-options/administrator-options/teams.md)
 
 ### Datasources
 

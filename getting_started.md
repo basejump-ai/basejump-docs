@@ -1,3 +1,7 @@
+---
+icon: star
+---
+
 # Getting Started
 
 ## Installation
@@ -24,8 +28,8 @@ The Basejump project is a layered architecture. It consists of (in order):
 ## Key Concepts
 
 At the most fundamental level, Basejump is built on a few concepts. At its core, Basejump relies on:
-- An AI data agent
-- Data (currently only via a database)
+- An LLM
+- Data stored in a database
 - A relational database
 - A vector database
 
@@ -46,7 +50,7 @@ class ServiceContext(CoreSession):
 
 Here is a quick summary of each item:
 - sql_engine: The SQL engine is the app engine. 
-- redis_client_async: The redis client is used to access the vector database.
+- redis_client_async: The Redis client is used to access the vector database.
 - large_model_info: This is the primary LLM used by Basejump to answer user questions.
 - small_model_info: This is a smaller and faster model used for JSON output validation or summaries.
 - embedding_model_info: This is the embedding model for storing the information in your vector database.
@@ -56,18 +60,18 @@ Basejump provides 2 AI data agents currently:
 - DataChatAgent: The DataChatAgent is the primary agent used in Basejump. It connects with one or many database connections and can talk with your data.
 - MermaidAgent: The MermaidAgent creates ERD diagrams based on your database index.
 
-!!! Agent Tools
+==- Agent Tools
 The DataChatAgent is given 2 tools currently, a SQL tool and a visualize tool. 
 
 The SQL tool checks the output of the agents SQL query and guides the agent through a workflow to creating a query. The visualize tool allows the agent to visualize the information from the SQLQuery using plotly.
-!!!
+===
 
 ### Data
 The AI data agent needs access to your data. The way it does this is via an indexed database. 
 
-This section covers the fundamentals for data access and storage of the client's database. Within Basejump, anything dealing with accessing the client database is within either the `/database/client/` or `/service/database/client/` packages. Client database is used to differentiate from the app database where things like CRUD operations are stored.
+This section covers the fundamentals of data access and storage for the client's database. Within Basejump, anything dealing with accessing the client database is in either the /database/client/ or /service/database/client/ packages. Client database is used to differentiate from the app database where things like CRUD operations are stored.
 
-!!! Data Profiling
+==- Data Profiling
 
 This is handled by the `BaseInspector` class within Basejump. Every database supported by Basejump has an inspector class. Here is the abstract class for all databases:
 
@@ -118,15 +122,13 @@ class BaseInspector(ABC):
     def get_foreign_keys(self, table_name: str, schema: Optional[str] = None):
         pass
 ```
-!!!
-
-!!! Indexing
+===
+==- Indexing
 A single function ised used to index a database called `index_db`. This is within the index module within the `database/client/` package.
-!!!
-
-!!! Storage
+===
+==- Storage
 The `ResultStore` class is used to data storage. There are currently 2 options: local storage or AWS S3 storage. Explore the store module in `basejump-core/basejump/core/database/result/store.py` for more information
-!!!
+===
 
 
 

@@ -13,7 +13,7 @@ The members page is used to manage all company members. Members can be added or 
 
 For an overview of each role, please refer to &quot;User Definitions&quot; on the Concepts page:
 
-[!ref](/getting-started/concepts.md)
+[!ref](/basejump_cloud/getting-started/concepts.md)
 
 ## Branding
 
@@ -37,7 +37,7 @@ Explore Mode   | Strict Mode
 ---    | ---
 Allows the AI to make it's best attempt to retrieve the information. Verified results are returned, but that's unverified (non-human reviewed) results can also be returned. | Restricts the AI to only return information that has previously been reviewed and verified. This is for those who need a higher level of assurance and accuracy from what the AI is returning.
 
-More information about verification can be found here: [!ref](/data-governance.md)
+More information about verification can be found here: [!ref](/basejump_cloud/data-governance.md)
 
 ### Private Storage
 

@@ -18,13 +18,13 @@ We also added a way for users to provide feedback to the AI. Users can now use t
 
 ![Thumbs up example](/images/changelog/thumbs_up_2025_04_10.png)
 
-More information about message thumbs up/down reactions can be found here: [!ref](/sidebar-options/member-options/chat.md)
+More information about message thumbs up/down reactions can be found here: [!ref](/basejump_cloud/sidebar-options/member-options/chat.md)
 
 Finally, for users that want improved security, they can store the AI result responses in their own private AWS object storage via S3. This security enhancement will ensure no spreadsheets from the user database is ever stored within Basejump. In order to add private storage, go to the Company -> Advanced section.
 
 ![Private storage option screenshot](/images/changelog/private_storage_option_2025_04_10.png)
 
-More information about private storage can be found here: [!ref](/sidebar-options/owner-options/company.md)
+More information about private storage can be found here: [!ref](/basejump_cloud/sidebar-options/owner-options/company.md)
 
 ### API Release
 

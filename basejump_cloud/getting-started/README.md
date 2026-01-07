@@ -1,3 +1,7 @@
+---
+icon: star
+---
+
 # Getting Started
 
 

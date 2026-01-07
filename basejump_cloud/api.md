@@ -1,3 +1,7 @@
+---
+icon: code
+---
+
 # API
 
 The API documentation can be found using the following link: [API Reference](https://docs.basejump.ai/api/api-reference/)

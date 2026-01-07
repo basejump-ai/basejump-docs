@@ -1,3 +1,7 @@
+---
+icon: telescope
+---
+
 # Overview
 
 Basejump AI is an AI data analytics platform that allows you to chat with your data. We enable this by using AI data agents for your particular task. Our primary focus is a data agent which assists the data team as a vital member to answer ad hoc questions that others may have. Using AI to assist with data analytics will help users get access to information faster than ever before.&#x20;

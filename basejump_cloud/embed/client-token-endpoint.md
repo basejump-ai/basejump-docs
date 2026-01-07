@@ -8,7 +8,7 @@ To ensure the security of your client token endpoint, it's important to understa
 **At a high-level, the authentication process works as follows:**
 
 1. When your application window is loaded, the basejump embed script will generate an iframe and embed it within your application window
-2. The iframe is initially pointed to a [client token endpoint](/embed/client-token-endpoint.md) which is hosted on your application server
+2. The iframe is initially pointed to a [client token endpoint](/basejump_cloud/embed/client-token-endpoint.md) which is hosted on your application server
 3. The client token endpoint authenticates users within your application
 4. The client token endpoint requests a unique redirect url from Basejump and then redirects the user to that url. 
 5. Basejump authenticates the user using an encrypted token included in the redirect url
@@ -21,7 +21,7 @@ To ensure the security of your client token endpoint, it's important to understa
 ### Requesting a Redirect URL
 
 > [!important]
-> The following assumes that you have a valid **API key client secret** and a valid **team UUID**. If you do not have a valid API key, please refer to the [API Keys](/sidebar-options/owner-options/api-keys.md) documentation for more information. We also have a [client token endpoint example](/embed/client-token-endpoint-example.md) which you can checkout for greater clarification.
+> The following assumes that you have a valid **API key client secret** and a valid **team UUID**. If you do not have a valid API key, please refer to the [API Keys](/basejump_cloud/sidebar-options/owner-options/api-keys.md) documentation for more information. We also have a [client token endpoint example](/basejump_cloud/embed/client-token-endpoint-example.md) which you can checkout for greater clarification.
 
 To request a unique embed redirect url, make a POST request to the `https://app.basejump.ai/embed/get-embed-redirect-url/` endpoint:
 
@@ -70,5 +70,5 @@ That's it! Your embed is complete and users can now access the Basejump chat int
 
 Basejump has created a special user role called a **Service Member** for external applications to use with the embed code. Service members are a special user role that cannot login to the Basejump web app. Their main purpose is to simplify the number of users an external application needs to create and manage, for example: a single service member could be shared by multiple users within an application. 
 
-To learn more about service members, [click here](/embed/service-members.md).
+To learn more about service members, [click here](/basejump_cloud/embed/service-members.md).
 

@@ -49,7 +49,7 @@ Users can mark a result as 'verified'. When Users mark a result as verified, it 
 
 For more detail about verification, please refer to the data governance page: 
 
-[!ref](/data-governance.md)
+[!ref](/basejump_cloud/data-governance.md)
 
 ## Double-Texting
 

@@ -16,7 +16,7 @@ Click the 'Generate New Key' button to pull up a window to create your API key. 
 
 You can also specify the access level. For more information on the various use roles, please refer to the concepts page:
 
-[!ref](/getting-started/concepts.md)
+[!ref](/basejump_cloud/getting-started/concepts.md)
 
 Finally, make sure to copy your client secret since it won't be shown again.
 
@@ -34,4 +34,4 @@ To revoke an API key, go to the API Key management page and click the ellipsis a
 
 For more information about API keys and using them within the API, please refer to the [API Reference](https://docs.basejump.ai/api/api-reference/). The API page in the docs also has high-level information regarding using the API:
 
-[!ref](/api.md)
+[!ref](/basejump_cloud/api.md)

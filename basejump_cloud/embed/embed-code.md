@@ -1,5 +1,5 @@
 > [!important]
-> In order to use the Basejump embed code, you will need to generate an OWNER-level [API Key](/sidebar-options/owner-options/api-keys.md).
+> In order to use the Basejump embed code, you will need to generate an OWNER-level [API Key](/basejump_cloud/sidebar-options/owner-options/api-keys.md).
 
 ### Generating an Embed Code
 

@@ -1,6 +1,6 @@
 {
   "version": "3.11.0",
-  "created": "2025-09-06T08:41:08Z",
+  "created": "2026-01-07T19:31:12Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,28 +9,156 @@
       "path": "404.html"
     },
     {
-      "path": "about/changelog/index.html"
+      "path": "about/changelog/index.html",
+      "old": true
     },
     {
-      "path": "about/contact_us/index.html"
+      "path": "about/contact_us/index.html",
+      "old": true
     },
     {
-      "path": "about/index.html"
+      "path": "about/index.html",
+      "old": true
     },
     {
-      "path": "about/roadmap/index.html"
+      "path": "about/roadmap/index.html",
+      "old": true
     },
     {
-      "path": "account/billing/index.html"
+      "path": "account/billing/index.html",
+      "old": true
     },
     {
-      "path": "account/index.html"
+      "path": "account/index.html",
+      "old": true
     },
     {
-      "path": "account/profile/index.html"
+      "path": "account/profile/index.html",
+      "old": true
     },
     {
-      "path": "api/index.html"
+      "path": "api/index.html",
+      "old": true
+    },
+    {
+      "path": "basejump_cloud/about/changelog/index.html"
+    },
+    {
+      "path": "basejump_cloud/about/contact_us/index.html"
+    },
+    {
+      "path": "basejump_cloud/about/index.html"
+    },
+    {
+      "path": "basejump_cloud/about/roadmap/index.html"
+    },
+    {
+      "path": "basejump_cloud/account/billing/index.html"
+    },
+    {
+      "path": "basejump_cloud/account/index.html"
+    },
+    {
+      "path": "basejump_cloud/account/profile/index.html"
+    },
+    {
+      "path": "basejump_cloud/api/index.html"
+    },
+    {
+      "path": "basejump_cloud/data-governance/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/client-token-endpoint-example/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/client-token-endpoint/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/cross-origin-communication/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/embed-code/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/index.html"
+    },
+    {
+      "path": "basejump_cloud/embed/service-members/index.html"
+    },
+    {
+      "path": "basejump_cloud/getting-started/concepts/index.html"
+    },
+    {
+      "path": "basejump_cloud/getting-started/index.html"
+    },
+    {
+      "path": "basejump_cloud/getting-started/quickstart/index.html"
+    },
+    {
+      "path": "basejump_cloud/index.html"
+    },
+    {
+      "path": "basejump_cloud/integrations/index.html"
+    },
+    {
+      "path": "basejump_cloud/overview/index.html"
+    },
+    {
+      "path": "basejump_cloud/security/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/administrator-options/datasources/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/administrator-options/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/administrator-options/teams/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/chat/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/collections/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/data/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/docs/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/explore/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/member-options/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/owner-options/api-keys/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/owner-options/company/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/owner-options/index.html"
+    },
+    {
+      "path": "basejump_cloud/sidebar-options/owner-options/subscription/index.html"
+    },
+    {
+      "path": "blog/are_dashboards_dead/index.html"
+    },
+    {
+      "path": "blog/feed.xml"
+    },
+    {
+      "path": "blog/index.html"
+    },
+    {
+      "path": "blog/what_it_takes/index.html"
     },
     {
       "path": "changelog/index.html",
@@ -44,37 +172,54 @@
       "old": true
     },
     {
-      "path": "data-governance/index.html"
+      "path": "data-governance/index.html",
+      "old": true
     },
     {
-      "path": "embed/client-token-endpoint-example/index.html"
+      "path": "embed/client-token-endpoint-example/index.html",
+      "old": true
     },
     {
-      "path": "embed/client-token-endpoint/index.html"
+      "path": "embed/client-token-endpoint/index.html",
+      "old": true
     },
     {
-      "path": "embed/cross-origin-communication/index.html"
+      "path": "embed/cross-origin-communication/index.html",
+      "old": true
     },
     {
-      "path": "embed/embed-code/index.html"
+      "path": "embed/embed-code/index.html",
+      "old": true
     },
     {
-      "path": "embed/index.html"
+      "path": "embed/index.html",
+      "old": true
     },
     {
-      "path": "embed/introduction/index.html"
+      "path": "embed/introduction/index.html",
+      "old": true
     },
     {
-      "path": "embed/service-members/index.html"
+      "path": "embed/service-members/index.html",
+      "old": true
     },
     {
-      "path": "getting-started/concepts/index.html"
+      "path": "faq/index.html"
     },
     {
-      "path": "getting-started/index.html"
+      "path": "getting_started/index.html"
     },
     {
-      "path": "getting-started/quickstart/index.html"
+      "path": "getting-started/concepts/index.html",
+      "old": true
+    },
+    {
+      "path": "getting-started/index.html",
+      "old": true
+    },
+    {
+      "path": "getting-started/quickstart/index.html",
+      "old": true
     },
     {
       "path": "images/account/profile.png"
@@ -93,6 +238,42 @@
     },
     {
       "path": "images/basejump_logo.png"
+    },
+    {
+      "path": "images/blog/are_dashboards_dead/sql_query_creation.png"
+    },
+    {
+      "path": "images/blog/are_dashboards_dead/thumbnail.jpg"
+    },
+    {
+      "path": "images/blog/what_it_takes/chat_example.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/competitor_comparison.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/most_recent_release.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/private_storage.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/report_issue.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/snowflake_ai_copilot.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/t_shirt.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/table_metadata.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/what_it_takes_thumbnail.png"
+    },
+    {
+      "path": "images/blog/what_it_takes/what_to_consider.png"
     },
     {
       "path": "images/changelog/bar_chart_2025_02_07.png"
@@ -290,22 +471,48 @@
       "path": "index.html"
     },
     {
+      "path": "integrations/database/athena/index.html"
+    },
+    {
+      "path": "integrations/database/ms_sql_server/index.html"
+    },
+    {
+      "path": "integrations/database/mysql/index.html"
+    },
+    {
+      "path": "integrations/database/postgres/index.html"
+    },
+    {
+      "path": "integrations/database/redshift/index.html"
+    },
+    {
+      "path": "integrations/database/snowflake/index.html"
+    },
+    {
       "path": "integrations/index.html"
     },
     {
-      "path": "integrations/ms_sql_server/index.html"
+      "path": "integrations/ms_sql_server/index.html",
+      "old": true
     },
     {
-      "path": "integrations/mysql/index.html"
+      "path": "integrations/mysql/index.html",
+      "old": true
     },
     {
-      "path": "integrations/postgres/index.html"
+      "path": "integrations/postgres/index.html",
+      "old": true
     },
     {
-      "path": "integrations/redshift/index.html"
+      "path": "integrations/redshift/index.html",
+      "old": true
     },
     {
-      "path": "integrations/snowflake/index.html"
+      "path": "integrations/snowflake/index.html",
+      "old": true
+    },
+    {
+      "path": "quickstart/index.html"
     },
     {
       "path": "resources/css/retype.css"
@@ -354,49 +561,64 @@
       "path": "robots.txt"
     },
     {
-      "path": "security/index.html"
+      "path": "security/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/administrator-options/datasources/index.html"
+      "path": "sidebar-options/administrator-options/datasources/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/administrator-options/index.html"
+      "path": "sidebar-options/administrator-options/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/administrator-options/teams/index.html"
+      "path": "sidebar-options/administrator-options/teams/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/index.html"
+      "path": "sidebar-options/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/chat/index.html"
+      "path": "sidebar-options/member-options/chat/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/collections/index.html"
+      "path": "sidebar-options/member-options/collections/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/data/index.html"
+      "path": "sidebar-options/member-options/data/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/docs/index.html"
+      "path": "sidebar-options/member-options/docs/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/explore/index.html"
+      "path": "sidebar-options/member-options/explore/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/member-options/index.html"
+      "path": "sidebar-options/member-options/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/owner-options/api-keys/index.html"
+      "path": "sidebar-options/owner-options/api-keys/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/owner-options/company/index.html"
+      "path": "sidebar-options/owner-options/company/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/owner-options/index.html"
+      "path": "sidebar-options/owner-options/index.html",
+      "old": true
     },
     {
-      "path": "sidebar-options/owner-options/subscription/index.html"
+      "path": "sidebar-options/owner-options/subscription/index.html",
+      "old": true
     },
     {
       "path": "sitemap.xml.gz"

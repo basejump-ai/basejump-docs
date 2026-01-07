@@ -1,3 +1,7 @@
+---
+icon: gear
+---
+
 # Integrations
 
 The open source integrations page lists all of the database integrations that we currently support:

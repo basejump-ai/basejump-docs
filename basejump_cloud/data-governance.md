@@ -1,3 +1,7 @@
+---
+icon: shield-lock
+---
+
 # Data Governance
 
 Due to the democratization of access to the database that the Basejump AI platform will enable, Users will generate data objects faster than ever. This effect of improved access leading to increased utilization is known as [Jevon's paradox](https://en.wikipedia.org/wiki/Jevons_paradox).
@@ -39,7 +43,7 @@ The relationships you define will be shown as an ERD diagram in our 'Explore' pa
 
 For more information, please refer to the explore page:
 
-[!ref](/basejump-cloud/sidebar-options/member-options/explore.md)
+[!ref](/basejump_cloud/sidebar-options/member-options/explore.md)
 
 ## Verification
 

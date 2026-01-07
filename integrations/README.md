@@ -1,3 +1,7 @@
+---
+icon: gear
+---
+
 # Integrations
 
 Basejump relies on both database profiling and AI models in order to function. This section gives some information on what is currently supported.

@@ -1,3 +1,7 @@
+---
+icon: lock
+---
+
 # Security
 
 Security is important to us so we have a few measures in place to ensure we are shipping secure software. There are many different aspects of security that we elaborate below to help explain our internal policies. We use multiple industry standard tools to ensure the security of our application.

@@ -26,7 +26,7 @@ You see that two database sources have already been added, the `HR Database` and
 
 2. Fill in your database credentials in the modal window. To include any additional schemas besides the default schema, add them in the 'Accessible Schemas'. For more information on creating templated schemas using Jinja, refer to the 'Datasources' page. The database role you provide needs to have a SELECT permission to the tables you want to give access.
 
-[!ref](/sidebar-options/administrator-options/datasources.md)
+[!ref](/basejump_cloud/sidebar-options/administrator-options/datasources.md)
 
 3. Your database comes with the initial connection that you provided. You can add additional connections with different usernames and passwords by selecting the connection number on the database line. Access is provisioned at the connection level and not at the database level.
 
@@ -69,5 +69,5 @@ That's it! You now have set up your account to start chatting with the AI data a
 
 If you're interested in the API, see the API docs for information for getting started using the API.
 
-[!ref](/api.md)
+[!ref](/basejump_cloud/api.md)
 

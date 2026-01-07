@@ -1,3 +1,7 @@
+---
+icon: sidebar-collapse
+---
+
 # Sidebar Options
 
 This is an image of the complete list of sidebar options. Members won't be able to see the items below settings since those options are for admin and owners only.

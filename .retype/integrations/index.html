@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.810463264901">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.821129468591">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Integrations</title>
     <meta name="title" content="Integrations">
-    <meta name="description" content="The Basejump AI platform currently integrates with 5 DBMS types:">
+    <meta name="description" content="Basejump relies on both database profiling and AI models in order to function. This section gives some information on what is currently supported.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://basejump.ai/integrations/">
@@ -20,24 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://basejump.ai/integrations/">
     <meta property="og:title" content="Integrations">
-    <meta property="og:description" content="The Basejump AI platform currently integrates with 5 DBMS types:">
-    <meta property="og:image" content="https://basejump.ai/images/datasources/ssl_modes.png">
+    <meta property="og:description" content="Basejump relies on both database profiling and AI models in order to function. This section gives some information on what is currently supported.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://basejump.ai/integrations/">
     <meta property="twitter:title" content="Integrations">
-    <meta property="twitter:description" content="The Basejump AI platform currently integrates with 5 DBMS types:">
-    <meta property="twitter:image" content="https://basejump.ai/images/datasources/ssl_modes.png">
+    <meta property="twitter:description" content="Basejump relies on both database profiling and AI models in order to function. This section gives some information on what is currently supported.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../images/favicon.png" rel="icon">
-    <link href="../resources/css/retype.css?v=3.11.0.810463264901" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.11.0.821129468591" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.810463264901" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.821129468591" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.810463264901" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.821129468591" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,45 +174,33 @@
         <span>Integrations</span>
     </h1>
 </doc-anchor-target>
-<p>The Basejump AI platform currently integrates with 5 DBMS types:</p>
+<p>Basejump relies on both database profiling and AI models in order to function. This section gives some information on what is currently supported.</p>
+<p>Don&#x27;t see an integration? We welcome any community contributions! Go to our <a href="https://github.com/basejump-ai/basejump">open source project</a> to open a PR.</p>
+<doc-anchor-target id="databases">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#databases">#</doc-anchor-trigger>
+        <span>Databases</span>
+    </h2>
+</doc-anchor-target>
+<p>The Basejump AI platform currently integrates with 6 DBMS types:</p>
 <ul>
 <li>MS SQL Server</li>
 <li>MySQL</li>
 <li>Postgres</li>
 <li>Redshift</li>
 <li>Snowflake</li>
+<li>Athena</li>
 </ul>
-<p>We can quickly add any integration listed on the <a href="https://docs.sqlalchemy.org/en/20/dialects/">SQLAlchemy dialects</a> web page. To request a new integration be added, please email <a href="mailto:support@basejump.ai">support@basejump.ai</a> with the same email you used to create your account.</p>
-<doc-anchor-target id="ssltls-encryption">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ssltls-encryption">#</doc-anchor-trigger>
-        <span>SSL/TLS Encryption</span>
-    </h1>
+<p>However, adding a new one is relatively simple. The inspector classes in Basejump open source are where this is handled and can be found in <code v-pre>basejump-core/basejump/core/database/inspector/</code>. These are built on top of SQLAlchemy&#x27;s <a href="https://docs.sqlalchemy.org/en/20/core/reflection.html#sqlalchemy.engine.reflection.Inspector">Inspector class</a>.</p>
+<p>For a list of supported databases via SQLAlchemy, you can go to their website <a href="https://docs.sqlalchemy.org/en/20/dialects/">here</a>.</p>
+<doc-anchor-target id="ai-models">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#ai-models">#</doc-anchor-trigger>
+        <span>AI Models</span>
+    </h2>
 </doc-anchor-target>
-<p>All database connections with Basejump AI are encrypted by default. If your database does not offer encryption due to a missing server certificate, Basejump AI will refuse to connect.</p>
-<p>There are 3 levels of TLS encryption available, referred to as SSL modes in the app:</p>
-<ul>
-<li>Required: This creates an encrypted connection, but does not verify the CA cert</li>
-<li>Verify CA: This creates an encrypted connection and verifies the CA cert</li>
-<li>Verify Full: This creates an encrypted connection, verifies the CA cert, and verifies the host name in the CA cert</li>
-</ul>
-<p>Verify full is most secure since it not only encrypts the connection and verifies the certificate, but also confirms the user is connecting to the correct source, which protects against man-in-the-middle attacks. However, this does come with some additional latency. We borrowed these classifications from the Postgres SSL definitions found <a href="https://www.postgresql.org/docs/current/libpq-ssl.html">here</a> and standardized these same three categories to all of our database connections.</p>
-<p>SSL is no longer in use and has been replaced with TLS, however, SSL is still commonly used to refer to an encrypted connection. All references to SSL throughout this documentation are referring to a TLS connection.</p>
-<p>For more advanced encryption options such as mTSL or SSH tunneling, please contact us.</p>
-<doc-anchor-target id="setting-up-an-encrypted-connection">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-an-encrypted-connection">#</doc-anchor-trigger>
-        <span>Setting up an Encrypted Connection</span>
-    </h1>
-</doc-anchor-target>
-<p>When on the datasources page, click &#x27;Add Database&#x27; to add a connection. You will see the SSL Mode dropdown that allows you to set your level of preferred protection.</p>
-<p><figure class="content-center">
-    <img src="../images/datasources/ssl_modes.png" alt="SSL Mode Configuration" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">SSL Mode Configuration</figcaption>
-</figure>
-</p>
-<p>In order to use the Verify CA or Verify Full SSL Modes, the User needs to upload the root CA file which has the public key needed to verify the TLS certificate. If a public certificate authority (CA) was used to generate the server certificate, the User can go to the CA website and download their root certificate. If your certificate is self-signed, you will need to provide your server certificate with the certificate chain included so the root certificate can be verified.</p>
-<p>If your DBMS is not self-hosted, DBMS providers usually provide their CA certificates for download. Please refer to the database-specific page under integrations for more details regarding downloading the proper certificate.</p>
+<p>Basejump requires an AI model to run. Right now we support AI models hosted on either AWS or Azure. Any model that LlamaIndex supports, Basejump can hypothetically support.</p>
+<p>To add a new model to Basejump, just update the <code v-pre>AIModelSchema</code> in <code v-pre>basejump.core.models.schemas</code> and submit a PR. Make sure to test your new model before submitting the new PR.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -230,20 +216,20 @@
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../data-governance/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../quickstart/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Data Governance</span>
+                                                <span class="block mt-1">Quickstart</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../integrations/ms_sql_server/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../integrations/database/athena/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Microsoft SQL Server</span>
+                                                <span class="block mt-1">Athena</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -258,7 +244,7 @@
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025 Basejump AI Inc. All rights reserved.</p></div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2026 Basejump AI Inc. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>

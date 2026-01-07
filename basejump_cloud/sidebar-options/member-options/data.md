@@ -11,7 +11,7 @@ The data page contains the three data object types:
 
 An explanation of each is provided on the concepts page:
 
-[!ref](/getting-started/concepts.md)
+[!ref](/basejump_cloud/getting-started/concepts.md)
 
 ## Data Tile View
 
@@ -64,7 +64,7 @@ Item   | Description
 
  The Collections page is linked below for more information on Collections:
 
-[!ref](/sidebar-options/member-options/collections.md)
+[!ref](/basejump_cloud/sidebar-options/member-options/collections.md)
 
  ## Sharing Data
 
