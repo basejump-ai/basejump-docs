@@ -1,5 +1,46 @@
 # Changelog
 
+## Added Support for CSV Uploads + Code Refactor
+_January 19, 2026_
+
+This release was mostly refactoring + did also add support for CSV uploads into Athena tables.
+
+### Summary
+
+==- Open Source
+**Release v0.2.2**
+
+## Summary
+- Refactored the codebase, implemented CSV uploads, and improved security.
+
+## Features
+- New `TableUploader` class
+- Added support for CSV uploads
+- Added Alembic to basejump-core
+- Added support for AWS sessions
+
+## Bugs
+- Fixed S3 upload limit from incorrect logging and ~4MB upload limit to 10MB upload limit
+
+## Breaking Changes
+- .env file now requires BASEJUMP_ prefix for environment variables
+- Renamed the `index_db` function parameter `update_only` to `check_if_exists`
+- Refactored the db_connect and db_utils modules into the: connect, manage, session, and ssl modules
+- Refactored the sql.py module into the: validator, parser, and sampler
+- Renamed manage modules to manager
+- Renamed `ConnectDB` -> `Connector`
+
+===
+
+==- API
+**Release v1.2.2**
+
+### Summary
+- Support for GPT5.2
+- Updates for the latest Open Source version
+===
+
+
 ## Basejump AI is Now Open Source
 _January 7, 2026_
 
@@ -16,9 +57,9 @@ We’re excited to announce that Basejump AI is now open source! This has been a
 Basejump also now supports embeds!
 
 ### Summary
-Going forward, the changelog will have 3 separate sections: one for open source releases, one for API releases, and one for the UI releases.
+Going forward, the changelog will have 2 separate sections: one for open source releases and one for API releases.
 
-==- open source
+==- Open Source
 **Release v0.31.4**
 
 _January 7, 2026_
@@ -59,6 +100,8 @@ _January 7, 2026_
 ===
 
 ==- UI
+No UI updates.
+===
 
 _January 7, 2026_
 
