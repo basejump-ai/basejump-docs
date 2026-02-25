@@ -1,11 +1,49 @@
 # Changelog
 
+## Added Continuous Learning and Additional Context Options
+_February 24, 2026_
+
+Added SQL example caching, documentation tool, and refactored the code base to isolate tools from agents.
+
+==- Open Source
+**Release v0.3.0**
+
+## Summary
+- Added SQL example caching, documentation tool, and refactored the code base to isolate tools from agents.
+
+## Features
+- Added caching of answers when there is a thumbs up to allow the AI to learn from feedback
+- Added the docs tool to the data agent
+- Add a new context package for updating agent context such as query examples + docs
+- Increasing max token sizing for larger prompts
+
+## Bugs
+- Fixing issue where multiple result UUIDs could not be generated per prompt
+- Fixed thought parsing output
+
+## Breaking Changes
+- Standardized utils modules to avoid using a prefix
+- Refactor of the service module, especially with how agents use tools
+    - Separated dependency between agent and tools so tools are strictly upstream from agents
+
+===
+
+==- API
+**Release v1.3.0**
+
+## Summary
+- Updated to latest open source v0.3.0
+- Added caching for messages that get thumbs up
+
+## Bugs
+- Fixed optional UUID dependency forcing all values to None
+
+===
+
 ## Added Support for CSV Uploads + Code Refactor
 _January 19, 2026_
 
 This release was mostly refactoring + did also add support for CSV uploads into Athena tables.
-
-### Summary
 
 ==- Open Source
 **Release v0.2.2**
@@ -97,17 +135,6 @@ _January 7, 2026_
 
 ### Breaking changes
 - None
-===
-
-==- UI
-No UI updates.
-===
-
-_January 7, 2026_
-
-### Features
-- Basejump now supports embeds
-
 ===
 
 ## Improved Accuracy, Feedback, and Private Storage

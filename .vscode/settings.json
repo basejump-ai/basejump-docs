@@ -24,5 +24,6 @@
             "name": "DO Basejump Prod",
             "password": "undvFk8GJUXDQvQEEmUhA7dTcArz4qsj"
         }
-    ]
+    ],
+    "snyk.advanced.autoSelectOrganization": true
 }

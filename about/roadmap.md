@@ -6,17 +6,24 @@ The considering section are items we are thinking about adding. To give your tho
 
 2026 Q1 
 :   
-    - :white_check_mark: Basejump open source release
+    - :white_check_mark: Basejump cloud (v1.2.2): Add support for GPT5.2
+    - :white_check_mark: Open source (v0.1.0): Basejump open source release
+    - :white_check_mark: Open source (v0.3.0): Adding continuous learning via thumbs up feedback
+    - :white_check_mark: Open source (v0.3.0): Adding a SQL example upload option
+    - Open source: Adding local embedding option alternative to Redis
+    - Open source: Adding support for SQLite for local development
+    - Open source: Adding a CLI
+    - Open source: Adding a testing suite using existing SQLGlot parsing capabilities
+    - Open source: Adding a context module
+    - Open source: Adding a dbt integration
     - Open source: Adding support for Google Cloud BigQuery
-    - Open source: Add support for other embedding models besides Azure hosted embedding models
-    - Open source: Support for more vector databases besides Redis
-    - Basejump cloud: Add support for GPT5.2 and Sonnet 4.5
-    - Basejump cloud: Add upload CSV feature
 
 Doing, But Not Scheduled
 :   
     - Add Collections endpoints to the API
-    - Allowing admins to upload SQL queries which can then be used as a data objects that are shareable.
+    - Basejump cloud: Add upload CSV feature
+    - Open source: Add support for other embedding models besides Azure hosted embedding models
+    - Open source: Support for more vector databases besides Redis
 
 Considering
 :   

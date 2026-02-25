@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.822183116167">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.825311128713">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Changelog</title>
     <meta name="title" content="Changelog">
-    <meta name="description" content="January 19, 2026">
+    <meta name="description" content="February 24, 2026">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://basejump.ai/about/changelog/">
@@ -20,24 +20,24 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://basejump.ai/about/changelog/">
     <meta property="og:title" content="Changelog">
-    <meta property="og:description" content="January 19, 2026">
+    <meta property="og:description" content="February 24, 2026">
     <meta property="og:image" content="https://basejump.ai/images/changelog/thumbs_up_2025_04_10.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://basejump.ai/about/changelog/">
     <meta property="twitter:title" content="Changelog">
-    <meta property="twitter:description" content="January 19, 2026">
+    <meta property="twitter:description" content="February 24, 2026">
     <meta property="twitter:image" content="https://basejump.ai/images/changelog/thumbs_up_2025_04_10.png">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link href="../../images/favicon.png" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.822183116167" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.825311128713" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.822183116167" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.825311128713" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.822183116167" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.825311128713" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -176,6 +176,86 @@
         <span>Changelog</span>
     </h1>
 </doc-anchor-target>
+<doc-anchor-target id="added-continuous-learning-and-additional-context-options">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#added-continuous-learning-and-additional-context-options">#</doc-anchor-trigger>
+        <span>Added Continuous Learning and Additional Context Options</span>
+    </h2>
+</doc-anchor-target>
+<p><em>February 24, 2026</em></p>
+<p>Added SQL example caching, documentation tool, and refactored the code base to isolate tools from agents.</p>
+<doc-panel id="open-source" collapsed>
+    <template #title>Open Source</template>
+<p><strong>Release v0.3.0</strong></p>
+<doc-anchor-target id="summary">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
+        <span>Summary</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Added SQL example caching, documentation tool, and refactored the code base to isolate tools from agents.</li>
+</ul>
+<doc-anchor-target id="features">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
+        <span>Features</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Added caching of answers when there is a thumbs up to allow the AI to learn from feedback</li>
+<li>Added the docs tool to the data agent</li>
+<li>Add a new context package for updating agent context such as query examples + docs</li>
+<li>Increasing max token sizing for larger prompts</li>
+</ul>
+<doc-anchor-target id="bugs">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs">#</doc-anchor-trigger>
+        <span>Bugs</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Fixing issue where multiple result UUIDs could not be generated per prompt</li>
+<li>Fixed thought parsing output</li>
+</ul>
+<doc-anchor-target id="breaking-changes">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes">#</doc-anchor-trigger>
+        <span>Breaking Changes</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Standardized utils modules to avoid using a prefix</li>
+<li>Refactor of the service module, especially with how agents use tools
+<ul>
+<li>Separated dependency between agent and tools so tools are strictly upstream from agents</li>
+</ul>
+</li>
+</ul>
+</doc-panel>
+<doc-panel id="api" collapsed>
+    <template #title>API</template>
+<p><strong>Release v1.3.0</strong></p>
+<doc-anchor-target id="summary-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-1">#</doc-anchor-trigger>
+        <span>Summary</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Updated to latest open source v0.3.0</li>
+<li>Added caching for messages that get thumbs up</li>
+</ul>
+<doc-anchor-target id="bugs-1">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-1">#</doc-anchor-trigger>
+        <span>Bugs</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Fixed optional UUID dependency forcing all values to None</li>
+</ul>
+</doc-panel>
 <doc-anchor-target id="added-support-for-csv-uploads--code-refactor">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#added-support-for-csv-uploads--code-refactor">#</doc-anchor-trigger>
@@ -184,27 +264,21 @@
 </doc-anchor-target>
 <p><em>January 19, 2026</em></p>
 <p>This release was mostly refactoring + did also add support for CSV uploads into Athena tables.</p>
-<doc-anchor-target id="summary">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary">#</doc-anchor-trigger>
-        <span>Summary</span>
-    </h3>
-</doc-anchor-target>
 <doc-panel id="open-source" collapsed>
     <template #title>Open Source</template>
 <p><strong>Release v0.2.2</strong></p>
-<doc-anchor-target id="summary-1">
+<doc-anchor-target id="summary-2">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-2">#</doc-anchor-trigger>
         <span>Summary</span>
     </h2>
 </doc-anchor-target>
 <ul>
 <li>Refactored the codebase, implemented CSV uploads, and improved security.</li>
 </ul>
-<doc-anchor-target id="features">
+<doc-anchor-target id="features-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-1">#</doc-anchor-trigger>
         <span>Features</span>
     </h2>
 </doc-anchor-target>
@@ -214,18 +288,18 @@
 <li>Added Alembic to basejump-core</li>
 <li>Added support for AWS sessions</li>
 </ul>
-<doc-anchor-target id="bugs">
+<doc-anchor-target id="bugs-2">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-2">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h2>
 </doc-anchor-target>
 <ul>
 <li>Fixed S3 upload limit from incorrect logging and ~4MB upload limit to 10MB upload limit</li>
 </ul>
-<doc-anchor-target id="breaking-changes">
+<doc-anchor-target id="breaking-changes-1">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-1">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h2>
 </doc-anchor-target>
@@ -241,9 +315,9 @@
 <doc-panel id="api" collapsed>
     <template #title>API</template>
 <p><strong>Release v1.2.2</strong></p>
-<doc-anchor-target id="summary-2">
+<doc-anchor-target id="summary-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-3">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -275,9 +349,9 @@
 <li><span class="docs-emoji">&#x1F4E6;</span> Result Storage: Saves data results for later reference and auditing</li>
 </ul>
 <p>Basejump also now supports embeds!</p>
-<doc-anchor-target id="summary-3">
+<doc-anchor-target id="summary-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-4">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -286,9 +360,9 @@
     <template #title>Open Source</template>
 <p><strong>Release v0.31.4</strong></p>
 <p><em>January 7, 2026</em></p>
-<doc-anchor-target id="features-1">
+<doc-anchor-target id="features-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-2">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -297,9 +371,9 @@
 <li>Upgrade to pydantic V2</li>
 <li>Added support for Athena</li>
 </ul>
-<doc-anchor-target id="bugs-1">
+<doc-anchor-target id="bugs-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-3">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -307,9 +381,9 @@
 <li>Database column quoting is now working properly when there are mixed case names or other instances where columns need to be quoted</li>
 <li>Fixing column verification bug</li>
 </ul>
-<doc-anchor-target id="breaking-changes-1">
+<doc-anchor-target id="breaking-changes-2">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-1">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-2">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -321,9 +395,9 @@
     <template #title>API</template>
 <p><strong>Release v1.2.1</strong></p>
 <p><em>January 7, 2026</em></p>
-<doc-anchor-target id="features-2">
+<doc-anchor-target id="features-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#features-3">#</doc-anchor-trigger>
         <span>Features</span>
     </h3>
 </doc-anchor-target>
@@ -342,18 +416,18 @@
 <ul>
 <li>PUT <code v-pre>/account/client/settings/</code></li>
 </ul>
-<doc-anchor-target id="bugs-2">
+<doc-anchor-target id="bugs-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-4">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>None</li>
 </ul>
-<doc-anchor-target id="breaking-changes-2">
+<doc-anchor-target id="breaking-changes-3">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-2">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-3">#</doc-anchor-trigger>
         <span>Breaking changes</span>
     </h3>
 </doc-anchor-target>
@@ -361,21 +435,6 @@
 <li>None</li>
 </ul>
 </doc-panel>
-<doc-panel id="ui" collapsed>
-    <template #title>UI</template>
-<p>No UI updates.</p>
-</doc-panel>
-<p><em>January 7, 2026</em></p>
-<doc-anchor-target id="features-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-3">#</doc-anchor-trigger>
-        <span>Features</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Basejump now supports embeds</li>
-</ul>
-<p>===</p>
 <doc-anchor-target id="improved-accuracy-feedback-and-private-storage">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#improved-accuracy-feedback-and-private-storage">#</doc-anchor-trigger>
@@ -395,9 +454,9 @@
 <li><span class="docs-emoji">&#x1F44D;</span> Users can now provide feedback to the AI using thumbs up/down on a message</li>
 <li><span class="docs-emoji">&#x1F5C4;&#xFE0F;</span> Users can store saved data results in their own private storage</li>
 </ul>
-<doc-anchor-target id="summary-4">
+<doc-anchor-target id="summary-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-5">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -484,18 +543,18 @@
 <li storage_uuid="">PUT /connection/storage//</li>
 <li storage_uuid="">DELETE /connection/storage//</li>
 </ul>
-<doc-anchor-target id="bugs-3">
+<doc-anchor-target id="bugs-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-5">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
 <ul>
 <li>Fixed issue while chatting where if two prompts were submitted simultaneously, then the prompt that completes first would cancel the other from completing</li>
 </ul>
-<doc-anchor-target id="breaking-changes-3">
+<doc-anchor-target id="breaking-changes-4">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-3">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-4">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -540,9 +599,9 @@
 <li>Added the SQL Server and Snowflake database integrations!</li>
 <li>Made the port field optional when connecting your database (providers like Snowflake don&#x27;t require it)</li>
 </ul>
-<doc-anchor-target id="bugs-4">
+<doc-anchor-target id="bugs-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-6">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -552,9 +611,9 @@
 <li>If foreign schemas for a given table weren&#x27;t included in the accepted list of schemas, it would previously throw an error. Now that relationship is ignored and fills in None values if that foreign schema is not available as part of the database connection setup.</li>
 <li>Child partitions are excluded from indexing for redshift and postgres</li>
 </ul>
-<doc-anchor-target id="breaking-changes-4">
+<doc-anchor-target id="breaking-changes-5">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-4">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-5">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -579,9 +638,9 @@
 <ul>
 <li><span class="docs-emoji">&#x2705;</span> Users can mark results as verified, which will then be returned to other users for semantically similar queries.</li>
 </ul>
-<doc-anchor-target id="summary-5">
+<doc-anchor-target id="summary-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-5">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-6">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -679,9 +738,9 @@ More parameters to update will likely be added in the future.</li>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="bugs-5">
+<doc-anchor-target id="bugs-7">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-5">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-7">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -690,9 +749,9 @@ More parameters to update will likely be added in the future.</li>
 <li>Fixed only top 10 tables being used for ERD diagram</li>
 <li>Fixed queries for other connections with jinja values not executing due to unresolved jinja</li>
 </ul>
-<doc-anchor-target id="breaking-changes-5">
+<doc-anchor-target id="breaking-changes-6">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-5">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-6">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -733,9 +792,9 @@ More parameters to update will likely be added in the future.</li>
 <li><span class="docs-emoji">&#x1F527;</span> We gave our AI Data Assistant access to our docs. Users can now ask the AI any questions about how to use the Basejump AI app.</li>
 <li><span class="docs-emoji">&#x1F5FA;&#xFE0F;</span> We&#x27;re introducing guided tutorials which will help new users understand how to use our app.</li>
 </ul>
-<doc-anchor-target id="summary-6">
+<doc-anchor-target id="summary-7">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-6">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-7">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -793,9 +852,9 @@ More parameters to update will likely be added in the future.</li>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="bugs-6">
+<doc-anchor-target id="bugs-8">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-6">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bugs-8">#</doc-anchor-trigger>
         <span>Bugs</span>
     </h3>
 </doc-anchor-target>
@@ -803,9 +862,9 @@ More parameters to update will likely be added in the future.</li>
 <li>Updated the create_chat endpoint to not allow chats created by those who don&#x27;t belong to the team being passed in</li>
 <li>Updated code to throw error if there is a DB alias conflict</li>
 </ul>
-<doc-anchor-target id="breaking-changes-6">
+<doc-anchor-target id="breaking-changes-7">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-6">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-7">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
@@ -954,9 +1013,9 @@ POST /result/visual/search/ -&gt; DELETED</p>
     <template #title>API</template>
 <p><strong>Release v0.28.0</strong></p>
 <p><em>January 14, 2025</em></p>
-<doc-anchor-target id="summary-7">
+<doc-anchor-target id="summary-8">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-7">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#summary-8">#</doc-anchor-trigger>
         <span>Summary</span>
     </h3>
 </doc-anchor-target>
@@ -978,9 +1037,9 @@ POST /result/visual/search/ -&gt; DELETED</p>
 <li>Improved security and updated the documentation</li>
 <li>Improved RBAC controls for the API, added feature to stop AI thoughts, and updated the API docs</li>
 </ul>
-<doc-anchor-target id="breaking-changes-7">
+<doc-anchor-target id="breaking-changes-8">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-7">#</doc-anchor-trigger>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#breaking-changes-8">#</doc-anchor-trigger>
         <span>Breaking Changes</span>
     </h3>
 </doc-anchor-target>
