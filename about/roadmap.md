@@ -17,6 +17,7 @@ The considering section are items we are thinking about adding. To give your tho
     - Open source: Adding a context module
     - Open source: Adding a dbt integration
     - Open source: Adding support for Google Cloud BigQuery
+    - Open source: Benchmark Basejump on the Spider 2.0 benchmark
 
 Doing, But Not Scheduled
 :   
