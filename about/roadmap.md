@@ -10,6 +10,7 @@ The considering section are items we are thinking about adding. To give your tho
     - :white_check_mark: Open source (v0.1.0): Basejump open source release
     - :white_check_mark: Open source (v0.3.0): Adding continuous learning via thumbs up feedback
     - :white_check_mark: Open source (v0.3.0): Adding a SQL example upload option
+    - Open source: Have Claude Code make its first contribution
     - Open source: Adding local embedding option alternative to Redis
     - Open source: Adding support for SQLite for local development
     - Open source: Adding a CLI
